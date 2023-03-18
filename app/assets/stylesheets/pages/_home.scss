@@ -1,1 +1,16 @@
 // Specific CSS for your home-page
+.home--background {
+  // background: asset-url("music-teacher"), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3) 100%), asset-url("music-teacher");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.home--background h1, .home--background p {
+  text-shadow: 0 0 1.5rem white;
+}
