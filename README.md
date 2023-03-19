@@ -8,12 +8,12 @@ The app can then be found in `localhost:3000` just type it in your favourite bro
 Musicon is an app that allows users to book music classes with ease.
 
 Under development by:
-- https://github.com/L3monJuic3
-- https://github.com/Luca-Divit
+- https://github.com/L3monJuic3 Full-stack Developer
+- https://github.com/Luca-Divit Full-stack Developer
 
-Musicon
+Musicon <br>
 "Unlock Your Musical Potential with Ease - Book Lessons Today!"
 
-Thank you for your time in reading this.
-Hope you'll like it and have a nice day!
+Thank you for your time in reading this. <br>
+Hope you'll like it and have a nice day! <br>
 All rights reserved©
