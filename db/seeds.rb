@@ -120,36 +120,6 @@ end
 slot1.save!
 puts 'slot1 saved'
 
-lesson2 = Lesson.create!(
-  name: 'Single lesson',
-  description: 'Single stand alone lesson',
-  price: 15,
-  user_id: user1.id
-)
-i = 10
-until i == 23
-  Slot.create!(lesson_id: lesson2.id, start_time: DateTime.new(2022, 12, 2, i, 0, 0), end_time: DateTime.new(2022, 12, 2, (i+1), 0, 0) )
-  i += 1
-end
-lesson.save!
-
-puts 'lesson2 saved'
-
-lesson3 = Lesson.create!(
-  name: 'Single lesson',
-  description: 'package of 5 lessons',
-  price: 50,
-  user_id: user1.id
-)
-i = 10
-until i == 23
-  Slot.create!(lesson_id: lesson3.id, start_time: DateTime.new(2022, 12, 2, i, 0, 0), end_time: DateTime.new(2022, 12, 2, (i+1), 0, 0) )
-  i += 1
-end
-
-lesson.save!
-puts 'lesson3 saved'
-
 lesson4 = Lesson.create!(
   name: 'Intermediate Drum Class',
   description: 'Great for those with a comfortable skillset and would like to advance further',
@@ -179,6 +149,37 @@ end
 
 lesson.save!
 puts 'lesson5 saved'
+
+# lesson2 = Lesson.create!(
+#   name: 'Single lesson',
+#   description: 'Single stand alone lesson',
+#   price: 15,
+#   user_id: user1.id
+# )
+# i = 10
+# until i == 23
+#   Slot.create!(lesson_id: lesson2.id, start_time: DateTime.new(2022, 12, 2, i, 0, 0), end_time: DateTime.new(2022, 12, 2, (i+1), 0, 0) )
+#   i += 1
+# end
+# lesson.save!
+
+# puts 'lesson2 saved'
+
+# lesson3 = Lesson.create!(
+#   name: 'Single lesson',
+#   description: 'package of 5 lessons',
+#   price: 50,
+#   user_id: user1.id
+# )
+# i = 10
+# until i == 23
+#   Slot.create!(lesson_id: lesson3.id, start_time: DateTime.new(2022, 12, 2, i, 0, 0), end_time: DateTime.new(2022, 12, 2, (i+1), 0, 0) )
+#   i += 1
+# end
+
+# lesson.save!
+# puts 'lesson3 saved'
+
 
 #SEEDED BOOKINGS!!!
 Booking.create!(

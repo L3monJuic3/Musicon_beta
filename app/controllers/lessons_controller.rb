@@ -1,7 +1,7 @@
 class LessonsController < ApplicationController
   before_action :set_lesson, only: %i[show update destroy]
 
-  def inded
+  def index
     @lessons = Lesson.all
   end
 
