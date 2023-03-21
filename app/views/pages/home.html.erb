@@ -1,6 +1,27 @@
-<div class="home--background">
-  <div class="container">
-    <h1>Musicon</h1>
-    <p>Unlock Your Musical Potential with Ease - Book Lessons Today!</p>
+<div data-controller="chevrons">
+  <div class="home--background">
+    <div class="container container--grow">
+      <h1>Musicon</h1>
+      <p>Unlock Your Musical Potential with Ease - Book Lessons Today!</p>
+    </div>
+    <div
+      class="chevrons--container"
+      data-action="click->chevrons#scroll"
+    >
+      <i class="fa-solid fa-chevron-down"></i>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </div>
+  <div
+    class="container"
+    data-chevrons-target="explanation"
+  >
+    <h2 class="text-center">As easy as 1..2..3!</h2>
+    <ol>
+      <li>Choose a level</li>
+      <li>Select a slot</li>
+      <li>Book your class</li>
+    </ol>
+    <%# TODO complete this section with a 1,2,3 screenshots of the app showing how to book a class %>
   </div>
 </div>
