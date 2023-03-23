@@ -2,11 +2,11 @@
 <div class="container">
   <div class="cards">
     <% @lessons.each do |lesson| %>
-      <%= link_to lesson_path(lesson) do %>
+      <%= link_to lesson_path(lesson), class: "text-decoration-none" do %>
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path("music-teacher") %>);">
-          <h4> <%= lesson.name %> <h4>
+          <h4><%= lesson.name %><h4>
           <p><%= lesson.description %></p>
-        <p>Learn more</p>
+          <p>Learn more</p>
         </div>
       <% end %>
     <% end %>
