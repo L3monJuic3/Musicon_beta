@@ -1,5 +1,5 @@
 class LessonsController < ApplicationController
-  before_action :set_lesson, only: %i[show update destroy]
+  before_action :set_lesson, only: %i[show destroy]
 
   def index
     @lessons = Lesson.all
@@ -17,7 +17,7 @@ class LessonsController < ApplicationController
   def create
     @lesson = Lesson.new(lesson_params)
     @lesson.user = current_user
-    if @workout.save
+    if @lesson.save
       redirect_to lesson_booking_path(@lesson.id, @booking.id)
     else
       render :new, status: :unprocessable_entity
