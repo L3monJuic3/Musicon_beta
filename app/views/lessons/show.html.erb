@@ -4,5 +4,7 @@
   <div class="card-product-infos">
     <h2><%=@lesson.name %></h2>
     <p><%= @lesson.description %></p>
+    <%= cl_image_tag(@lesson.photo.key,
+      width: 400, height: 300, crop: :fill) %>
   </div>
 </div>

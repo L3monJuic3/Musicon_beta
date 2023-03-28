@@ -86,6 +86,7 @@ require "json"
 
 puts "Cleaning up database..."
 
+Booking.destroy_all
 Slot.destroy_all
 Lesson.destroy_all
 User.destroy_all
@@ -110,6 +111,8 @@ lesson = Lesson.create!(
   price: 15,
   user_id: user1.id
 )
+file = URI.open("app/assets/images/Musicon-Drummer-01.png")
+lesson.photo.attach(io: file, filename: "Musicon-Drummer-01.png", content_type: "image/png")
 lesson.save!
 puts 'lesson saved'
 i = 10
