@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :lessons do
-    resources :booking
+    resources :bookings, only: %i[create destroy]
   end
   # Defines the root path route ("/")
   # root "articles#index"
