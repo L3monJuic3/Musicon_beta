@@ -1,28 +1,60 @@
 <div data-controller="chevrons">
   <div class="home--background">
     <div class="container container--grow">
-      <h1>Musicon</h1>
-      <p>Unlock Your Musical Potential with Ease - Book Lessons Today!</p>
+      <h1>Harmonizing Success for Music Teachers</h1>
+      <p>Empowering music teachers with seamless management of bookings, payments and scheduling</p>
       <%= link_to "Book Now!", lessons_path, class: "button--book" %>
     </div>
-    <div
-      class="chevrons--container"
-      data-action="click->chevrons#scroll"
-    >
+    <div class="chevrons--container" data-action="click->chevrons#scroll">
       <i class="fa-solid fa-chevron-down"></i>
       <i class="fa-solid fa-chevron-down"></i>
     </div>
   </div>
-  <div
-    class="container"
-    data-chevrons-target="explanation"
-  >
-    <h2 class="text-center">As easy as 1..2..3!</h2>
-    <ol>
-      <li>Choose a level</li>
-      <li>Select a slot</li>
-      <li>Book your class</li>
-    </ol>
-    <%# TODO complete this section with a 1,2,3 screenshots of the app showing how to book a class %>
+  <div class="container mt-5" data-chevrons-target="explanation">
+  <br><br><br>
+    <div class="d-flex my-5" style="height: 35rem;">
+      <div class="text-before-card">
+        <h1 style="text-shadow: 0 0 1.5rem white;">My Journey</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque ipsum numquam autem quaerat, alias ab nostrum tenetur deserunt a maiores, voluptatibus commodi esse, quasi hic neque amet non voluptatem.
+        Non optio sunt hic nulla reiciendis molestiae saepe fugiat ullam quam velit corrupti architecto ducimus incidunt, consectetur magni eius sequi nisi id pariatur minus! Eaque architecto dignissimos tempore debitis nihil?
+        Quia, culpa amet quisquam laborum sed iure quo expedita et ad sint tempora. Consectetur eveniet minima quidem dignissimos, cum iste voluptatibus officiis fugit, mollitia necessitatibus impedit, doloremque eum numquam error.
+        </p>
+      </div>
+      <%= image_tag "kiddrummer", class: "image-card" %>
+    </div>
+    <hr>
+    <div class="d-flex my-5" style="height: 35rem;">
+      <%= image_tag "drumcertificate", class: "image-card" %>
+      <div class="text-after-card">
+        <h1 style="text-shadow: 0 0 1.5rem white;">Musical Achievements</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque ipsum numquam autem quaerat, alias ab nostrum tenetur deserunt a maiores, voluptatibus commodi esse, quasi hic neque amet non voluptatem.
+        Non optio sunt hic nulla reiciendis molestiae saepe fugiat ullam quam velit corrupti architecto ducimus incidunt, consectetur magni eius sequi nisi id pariatur minus! Eaque architecto dignissimos tempore debitis nihil?
+        Quia, culpa amet quisquam laborum sed iure quo expedita et ad sint tempora. Consectetur eveniet minima quidem dignissimos, cum iste voluptatibus officiis fugit, mollitia necessitatibus impedit, doloremque eum numquam error.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="d-flex my-5" style="height: 35rem;">
+      <div class="text-before-card">
+        <h1 style="text-shadow: 0 0 1.5rem white;">Musical Spacialisation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque ipsum numquam autem quaerat, alias ab nostrum tenetur deserunt a maiores, voluptatibus commodi esse, quasi hic neque amet non voluptatem.
+        Non optio sunt hic nulla reiciendis molestiae saepe fugiat ullam quam velit corrupti architecto ducimus incidunt, consectetur magni eius sequi nisi id pariatur minus! Eaque architecto dignissimos tempore debitis nihil?
+        Quia, culpa amet quisquam laborum sed iure quo expedita et ad sint tempora. Consectetur eveniet minima quidem dignissimos, cum iste voluptatibus officiis fugit, mollitia necessitatibus impedit, doloremque eum numquam error.
+        </p>
+      </div>
+      <%= image_tag "specialty", class: "image-card" %>
+    </div>
   </div>
 </div>
+<footer class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer has been edited with <i class="fas fa-heart"></i> by Luca
+  </div>
+</footer>
