@@ -73,3 +73,16 @@
 .text-after-card {
   margin: auto 0 auto 2rem;
 }
+
+.card {
+  border-radius: 0.5rem;
+  background-color: #fef3eb;
+}
+
+.secondary {
+  color: $secondary !important;
+}
+
+.m-primary {
+  color: $m-primary !important;
+}
