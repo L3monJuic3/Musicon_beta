@@ -1,0 +1,22 @@
+.sliding {
+  animation: appearing .6s;
+  opacity: .9;
+}
+
+.sliding:hover {
+  opacity: 1;
+}
+
+@keyframes appearing {
+  0%    {transform: translateX(-1400px); opacity: 0}
+  // 10%   {transform: translateX(-1260px);}
+  // 20%   {transform: translateX(-1120px);}
+  // 30%   {transform: translateX(-980px);}
+  // 40%   {transform: translateX(-840px);}
+  // 50%   {transform: translateX(-700px);}
+  // 60%   {transform: translateX(-560px);}
+  // 70%   {transform: translateX(-420px);}
+  // 80%   {transform: translateX(-280px);}
+  // 90%   {transform: translateX(-140px);}
+  100%  {transform: translateX(0px); opacity: .9;}
+}

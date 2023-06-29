@@ -9,3 +9,6 @@ application.register("chevrons", ChevronsController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import SliderController from "./slider_controller"
+application.register("slider", SliderController)

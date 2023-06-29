@@ -1,11 +1,21 @@
 // Specific CSS for your home-page
+
+* {
+  color: $m-text;
+}
+
 .home--background {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3) 100%), asset-url("music-teacher");
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.3) 0,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    asset-url("music-teacher");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  color: white;
+  color: $m-text;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,10 +26,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  flex: 5;
+  flex: 6;
+  width: 35%;
+  margin-left: 5rem;
 }
 
-.home--background h1, .home--background p {
+.home--background h1,
+.home--background p {
   text-shadow: 0 0 1.5rem white;
 }
 
@@ -37,7 +50,13 @@
 }
 
 @keyframes mymove {
-  0%   {scale: 2.5;}
-  50%  {scale: 3;}
-  100% {scale: 2.5;}
+  0% {
+    scale: 2.5;
+  }
+  50% {
+    scale: 3;
+  }
+  100% {
+    scale: 2.5;
+  }
 }
