@@ -1,12 +1,72 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  color: $m-text;
-}
+// #nav-container {
+//   background-color: #727070;
+//   position: relative;
+//   width: 47vh;
+//   left: -8px;
+//   top: -8px;
+// }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+// #nav-inner-container {
+//   display: flex;
+//   justify-content: space-between;
+//   padding-bottom: 15px;
+//   margin-top: 15px;
+//   position: relative;
+//   img {
+//     margin-top: 8px;
+//     margin-left: 10px;
+//   }
 
-.navbar-lewagon .navbar-brand img {
-  // width: 40px;
-}
+//   .fa-magnifying-glass {
+//     margin-top: 12px;
+//     font-size: 1.4em;
+//   }
+//   .fa-magnifying-glass::before {
+//     margin-right: 15px;
+//   }
+// }
+
+
+
+
+// #nav-links {
+//   display: flex;
+//   justify-content: center;
+//   border-bottom: solid #F9F9F9;
+//   border-width: thin;
+//   padding-bottom: 20px;
+//   position: relative;
+//   // left: -8px;
+//   width: 102vw;
+
+// }
+
+
+// #nav-link {
+//   padding: 5px;
+//   margin-left: 3px;
+//   margin-right: 3px;
+//   color: #F9F9F9;
+//   text-decoration: none;
+//   font-size: 1.1em;
+
+//   position: relative; /* Add this */
+//   z-index: 1;
+// }
+
+// /* Remove unnecessary hover styles from #nav-links */
+// #nav-link:hover {
+//   position: relative; /* Maintain the same position on hover */
+//   z-index: 2;
+// }
+
+// #nav-link:hover::before {
+//   content: ""; /* Create an empty element for the hover border */
+//   position: absolute; /* Position absolutely within the link */
+//   bottom: -19px; /* Place just above the link's original border */
+//   left: 0;
+//   width: 100%;
+//   border-bottom: solid #F9F9F9;
+//   border-width: medium;
+//   z-index: -1; /* Place below the link text */
+// }

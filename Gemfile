@@ -80,3 +80,5 @@ end
 
 # Cloudinary
 gem "cloudinary"
+
+gem "tailwindcss-rails", "~> 2.0"

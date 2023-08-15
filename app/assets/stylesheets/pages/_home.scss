@@ -1,62 +1,70 @@
-// Specific CSS for your home-page
+// // Specific CSS for your home-page
 
-* {
-  color: $m-text;
+// * {
+//   color: $m-text;
+// }
+
+// .home--background {
+//   background: linear-gradient(
+//       135deg,
+//       rgba(0, 0, 0, 0.3) 0,
+//       rgba(0, 0, 0, 0.3) 100%
+//     ),
+//     asset-url("music-teacher");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   min-height: 100vh;
+//   color: $m-text;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .container--grow {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: start;
+//   flex: 6;
+//   width: 35%;
+//   margin-left: 5rem;
+// }
+
+// .home--background h1,
+// .home--background p {
+//   text-shadow: 0 0 1.5rem white;
+// }
+
+// .chevrons--container {
+//   display: flex;
+//   flex-direction: column;
+//   flex: 1;
+//   .fa-chevron-down {
+//     scale: 2;
+//     animation: mymove 1.5s infinite;
+//   }
+//   .fa-chevron-down:hover {
+//     cursor: pointer;
+//   }
+// }
+
+// @keyframes mymove {
+//   0% {
+//     scale: 2.5;
+//   }
+//   50% {
+//     scale: 3;
+//   }
+//   100% {
+//     scale: 2.5;
+//   }
+// }
+
+#home-container {
+  background-color: #727070;
 }
 
-.home--background {
-  background: linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0.3) 0,
-      rgba(0, 0, 0, 0.3) 100%
-    ),
-    asset-url("music-teacher");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  color: $m-text;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container--grow {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  flex: 6;
-  width: 35%;
-  margin-left: 5rem;
-}
-
-.home--background h1,
-.home--background p {
-  text-shadow: 0 0 1.5rem white;
-}
-
-.chevrons--container {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  .fa-chevron-down {
-    scale: 2;
-    animation: mymove 1.5s infinite;
-  }
-  .fa-chevron-down:hover {
-    cursor: pointer;
-  }
-}
-
-@keyframes mymove {
-  0% {
-    scale: 2.5;
-  }
-  50% {
-    scale: 3;
-  }
-  100% {
-    scale: 2.5;
-  }
+body {
+  background-color: #727070;
 }

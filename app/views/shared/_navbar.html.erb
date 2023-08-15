@@ -1,31 +1,65 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "Untitled", width: 40 %>
-    <% end %>
+<%# <div id="nav-container">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="inner-container" id="nav-inner-container">
+    <%= image_tag "white-logo.png", width: 30 %>
+    <%# <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+  </div> %>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Index", lessons_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item dropdown">
-            <%= image_tag "tom", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
-            </div>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link", style: { "color:": '#fef3eb;'} %>
-          </li>
-        <% end %>
-      </ul>
+  <%# <div id="nav-links">
+    <a id="nav-link" href="#">Lessons</a>
+    <a id="nav-link" href="#">About</a>
+    <a id="nav-link" href="#">Videos</a>
+    <a id="nav-link" href="#">Reviews</a>
+    <a id="nav-link" href="#">Social Media</a>
+  </div> %>
+
+<%# </div> %>
+
+
+<%# <div class="container mx-auto"> %>
+
+  <%# <div class="row justify-content-center">
+    <%# <div class="col-12 col-lg-6"> <%= image_tag "white-logo.png", width: 30 %>
+    <%# <div class="col-sm-6"> <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> </div>
+  </div>
+ %>
+<%#
+  <div class="flex items-center">
+
+    <div class="">
+      <%= image_tag "white-logo.png", width: 30 %>
+    <%# </div>
+
+    <div class="">
+      <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+    <div>
+
+  </div> %>
+
+
+  <%# <div class="nav-links">
+    <a class="nav-link" href="#">Lessons</a>
+    <a class="nav-link" href="#">About</a>
+    <a class="nav-link" href="#">Videos</a>
+    <a class="nav-link" href="#">Reviews</a>
+    <a class="nav-link" href="#">Social Media</a>
+  </div> %>
+
+<%# </div> %>
+<%#
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+      <!-- This div is centered and takes 6 columns -->
+      <h1>HEllo world</h1>
     </div>
+  </div>
+</div> %>
+
+<div class="flex items-center">
+  <img src="/app/assets/images/white-logo.png ">
+  <div>
+    <strong class="bg-blue-500">Andrew Alfred</strong>
+    <span>Technical advisor</span>
   </div>
 </div>
